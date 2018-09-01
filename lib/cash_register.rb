@@ -11,7 +11,7 @@ class CashRegister
     quantity.times do
       ITEMS << title
     end
-    puts ITEMS
+    p ITEMS
     self.total += price * quantity
     self.last_item = [title, price, quantity]
   end
