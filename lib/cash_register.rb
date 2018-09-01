@@ -9,9 +9,9 @@ class CashRegister
 
   def add_item(title, price, quantity = 1)
     quantity.times do
-      puts title
       ITEMS << title
     end
+    puts ITEMS
     self.total += price * quantity
     self.last_item = [title, price, quantity]
   end
