@@ -8,7 +8,7 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1)
-    ITEMS << %w(title) * quantity
+    ITEMS << title.to_a * quantity
     self.total += price * quantity
     self.last_item = [title, price, quantity]
   end
