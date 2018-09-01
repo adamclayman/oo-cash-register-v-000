@@ -13,7 +13,7 @@ class CashRegister
     self.last_item = [title, price, quantity]
   end
 
-  def items
+  def self.items
     ITEMS
   end
 
