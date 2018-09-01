@@ -26,6 +26,7 @@ class CashRegister
   end
 
   def self.items
+    p ITEMS
     return ITEMS
   end
 
