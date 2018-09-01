@@ -7,7 +7,7 @@ class CashRegister
     self.discount = discount
   end
 
-  def add_item(title, price, quantity = 1)
+  def self.add_item(title, price, quantity = 1)
     quantity.times do
       ITEMS << title
     end
