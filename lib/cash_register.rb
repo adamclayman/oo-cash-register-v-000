@@ -18,7 +18,7 @@ class CashRegister
 
   def apply_discount
     if self.discount == 0.0
-      return "There is no discount to apply."      
+      return "There is no discount to apply."
     else
       
     end
