@@ -8,7 +8,7 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1)
-    ITEMS << w%(title, price)
+    ITEMS << %w(title, price)
     self.total += price
   end
 end
