@@ -11,4 +11,8 @@ class CashRegister
     ITEMS << %w(title, price)
     self.total += price
   end
+
+  def items
+    ITEMS
+  end
 end
