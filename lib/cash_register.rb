@@ -20,7 +20,7 @@ class CashRegister
     if self.discount == 0.0
       return "There is no discount to apply."
     else
-      
+      self.total = self.total * ((100.0 - self.discount) / 100.0)
     end
   end
 
