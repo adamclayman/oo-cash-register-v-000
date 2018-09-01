@@ -2,7 +2,7 @@ class CashRegister
   attr_accessor :total, :discount, :last_item
   ITEMS = []
 
-  def initialize(discount = 0)
+  def initialize(discount = 0.0)
     self.total = 0
     self.discount = discount
   end
@@ -14,6 +14,14 @@ class CashRegister
     p ITEMS
     self.total += price * quantity
     self.last_item = [title, price, quantity]
+  end
+
+  def apply_discount
+    if self.discount == 0.0
+      return "There is no discount to apply."      
+    else
+      
+    end
   end
 
   def self.items
