@@ -17,7 +17,7 @@ class CashRegister
     ITEMS
   end
 
-  def self.void_last_transaction
+  def void_last_transaction
     self.total -= self.last_item[1] * self.last_item[2]
   end
 end
